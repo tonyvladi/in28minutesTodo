@@ -14,17 +14,17 @@ public class TodoService {
     private static  int todosCount = 0;
 
     static {
-        todos.add(new Todo(++todosCount, "in28minutes", "Learn AWS",
+        todos.add(new Todo(++todosCount, "in28minutes", "Learn AWS 1",
                 LocalDate.now().plusYears(1),false));
-        todos.add(new Todo(++todosCount, "in28minutes", "QA",
+        todos.add(new Todo(++todosCount, "in28minutes", "QA 1",
                 LocalDate.now().plusYears(1),false));
-        todos.add(new Todo(++todosCount, "in28minutes", "MySQL",
+        todos.add(new Todo(++todosCount, "in28minutes", "MySQL 1",
                 LocalDate.now().plusYears(2),false));
-        todos.add(new Todo(++todosCount, "in28minutes", "JavaCore",
+        todos.add(new Todo(++todosCount, "in28minutes", "JavaCore 1",
                 LocalDate.now().plusYears(3),false));
     }
 
-    public List<Todo> findByUserName(String username){
+    public List<Todo> findByUsername(String username){
         Predicate<? super Todo> predicate =
                 todo -> todo.getUsername().equalsIgnoreCase(username);
         return todos.stream().filter(predicate).toList();

@@ -1,0 +1,11 @@
+INSERT INTO todo (ID,USERNAME,DESCRIPTION, TARGET_DATE, DONE)
+values(10001, 'dar1y', 'learn AWS Certified', CURRENT_DATE(), false);
+
+INSERT INTO todo (ID,USERNAME,DESCRIPTION, TARGET_DATE, DONE)
+values(10002, 'dar1y', 'learn JAVA Certified', CURRENT_DATE(), false);
+
+INSERT INTO todo (ID,USERNAME,DESCRIPTION, TARGET_DATE, DONE)
+values(10003, 'dar1y', 'learn QA Certified', CURRENT_DATE(), false);
+
+INSERT INTO todo (ID,USERNAME,DESCRIPTION, TARGET_DATE, DONE)
+values(10004, 'dar1y', 'learn MICROSERVICES Certified', CURRENT_DATE(), false);
